@@ -1,4 +1,4 @@
-#%% # Importing the Necceary Libraries 
+#%% # Importing the Necceary Libraries  
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -11,6 +11,7 @@ file_path = (r'C:\Users\ghoreisb\Box\Oregon State University\0000- Research_OSU\
 
 dataframe = pd.read_csv(file_path)
 
+print(dataframe)
 #%% # Plotting the Bar Chart
 # Clean the 'station' column by removing leading/trailing whitespaces and making all text uppercase
 dataframe['station'] = dataframe['station'].str.strip().str.upper()
